@@ -1,0 +1,12 @@
+{ 
+	"Celtics":{ "year"  : 2014, "month" : 10, "day"   : 29, "Hours"  : 19,"ampm"  : "pm","minute"  : 30, "second"  : 0},
+
+	"Nets": { "year"  : 2014, "month" : 10, "day"   : 29, "Hours"  : 19,"ampm"  : "pm","minute"  : 30, "second"  : 0},
+ 
+ 	"Knicks": { "year"  : 2014, "month" : 10, "day"   : 29, "Hours"  : 20,"ampm"  : "pm","minute"  : 0, "second"  : 0},
+
+	"Raptors": {"year"  : 2014, "month" : 10, "day"   : 29, "Hours"  : 19,"ampm"  : "pm","minute"  : 30, "second"  : 0},
+
+	"Sixers": {"year"  : 2014, "month" : 10, "day"   : 29, "Hours"  : 19,"ampm"  : "pm","minute"  : 0, "second"  : 0}
+
+}
