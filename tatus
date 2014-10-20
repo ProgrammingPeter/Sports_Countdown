@@ -1,0 +1,44 @@
+[33mcommit 0f816dc74e88cf53608af1d8659daa55591f0d40[m
+Author: ProgrammingPeter <Peter.kamaris@yahoo.com>
+Date:   Sat Oct 18 19:29:54 2014 -0400
+
+    Adding Ruby scripts that parse the csv's and reformat them
+
+[33mcommit daa2bb241556ef27178af44c7db02ee237d3750a[m
+Merge: 070b330 ada8337
+Author: ProgrammingPeter <Peter.kamaris@yahoo.com>
+Date:   Sat Oct 18 01:57:25 2014 -0400
+
+    Merge https://github.com/ProgrammingPeter/Sports_Countdown
+
+[33mcommit 070b33005e96916c6e1e990f43b7f9bddad3c9c7[m
+Author: ProgrammingPeter <Peter.kamaris@yahoo.com>
+Date:   Sat Oct 18 01:53:25 2014 -0400
+
+    Adding empty Ruby scripts and a README.txt
+
+[33mcommit ada8337eecac023a285e03ad5fb03183d2902f70[m
+Author: Peter Kamaris <peter.kamaris@yahoo.com>
+Date:   Fri Oct 10 16:03:27 2014 -0400
+
+    Update README.md
+    
+    Update to README regarding purpose of website, and what is and isn't working.
+
+[33mcommit 2d8778259dc0309b7991eceec4b84231aed05261[m
+Author: DominiGreek <Peter.kamaris@yahoo.com>
+Date:   Mon Oct 6 22:04:37 2014 -0400
+
+    Adding NBA Schedules now
+
+[33mcommit 621eeca9bd6816b39c3f450e515dbb583fc3eb24[m
+Author: DominiGreek <Peter.kamaris@yahoo.com>
+Date:   Mon Oct 6 21:32:33 2014 -0400
+
+    Simple commit
+
+[33mcommit 510c1665c57bbe9c475ebfbf7869299b9e805016[m
+Author: Peter Kamaris <peter.kamaris@yahoo.com>
+Date:   Mon Oct 6 11:44:15 2014 -0400
+
+    Initial commit
