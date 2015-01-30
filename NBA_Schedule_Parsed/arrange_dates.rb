@@ -7,9 +7,9 @@ def parse_data(line)
 
         hour, minutes, time_zone, line = get_time(line)
 
-        home_away, opponent = get_arena_opponent(line)
+        home_away, opponent, network, televized = get_arena_opponent(line)
 
-        temp = Schedule.new(year, month, day, hour, minutes, time_zone, opponent, gamenumber, home_away)
+        temp = Schedule.new(year, month, day, hour, minutes, time_zone, opponent, gamenumber, home_away, network, televized)
         return temp
 
       end
@@ -112,10 +112,16 @@ def parse_data(line)
       index = line.index(",")
       line = line[index+1, line.size]
       index = line.index(",")
+      network = line[0, index] #Grabs network game will be televized on
       line = line[index+1, line.size]
       index = line.index(",")
       line = line[index+1, line.size]
 
+      if(network.empty?)
+        televized = 0
+      else
+        televized = 1
+      end
 
       if line[0] == "@"
         home_away = line[0, 1]
@@ -127,5 +133,146 @@ def parse_data(line)
       index = line.index(",")
       opponent = line[0,index]
 
-      return home_away, opponent
+      opponent = team_abbr(opponent)
+
+      return home_away, opponent, network, televized
     end
+
+    def arrange_home_away_teams(teamA, teamB, away_home)
+
+
+        if away_home == "@" #teamA will end up being the home team, and teamB will end up being the away team
+          temp = teamA
+          teamA = teamB
+          teamB = temp
+          return teamA, teamB
+        end
+
+      else
+        return teamA, teamB
+
+    end
+
+
+    def team_abbr(opponent)
+
+      if(opponent == "Atlanta Hawks")
+        return opponent = "ATL"
+      end
+
+      if(opponent == "Boston Celtics")
+        return opponent = "BOS"
+      end
+
+      if(opponent == "Brooklyn Nets")
+        return opponent = "BKN"
+      end
+
+      if(opponent == "Chicago Bulls")
+        return opponent = "CHI"
+      end
+
+      if(opponent == "Charlotte Hornets")
+        return opponent = "CHA"
+      end
+
+      if(opponent == "Cleveland Cavaliers")
+        return opponent = "CLE"
+      end
+
+      if(opponent == "Dallas Mavericks")
+        return opponent = "DAL"
+      end
+
+      if(opponent == "Denver Nuggets")
+        return opponent = "DEN"
+      end
+
+      if(opponent == "Detroit Pistons")
+        return opponent = "DET"
+      end
+      
+      if(opponent == "Golden State Warriors")
+        return opponent = "GSW"
+      end
+
+      if(opponent == "Houston Rockets")
+        return opponent = "HOU"
+      end
+
+      if(opponent == "Indiana Pacers")
+        return opponent = "IND"
+      end
+
+      if(opponent == "Los Angeles Clippers")
+        return opponent = "LAC"
+      end
+
+      if(opponent == "Los Angeles Lakers")
+        return opponent = "LAL"
+      end
+      
+      if(opponent == "Memphis Grizzlies")
+        return opponent = "MEM"
+      end
+
+      if(opponent == "Miami Heat")
+        return opponent = "MIA"
+      end
+
+      if(opponent == "Milwaukee Bucks")
+        return opponent = "MIL"
+      end
+
+      if(opponent == "Minnesota Timberwolves")
+        return opponent = "MIN"
+      end
+
+      if(opponent == "New Orleans Pelicans")
+        return opponent = "NOP"
+      end
+
+      if(opponent == "New York Knicks")
+        return opponent = "NYK"
+      end
+      
+      if(opponent == "Oklahoma City Thunder")
+        return opponent = "OKC"
+      end
+
+      if(opponent == "Orlando Magic")
+        return opponent = "ORL"
+      end
+
+      if(opponent == "Philadelphia 76ers")
+        return opponent = "PHI"
+      end
+
+      if(opponent == "Phoenix Suns")
+        return opponent = "PHX"
+      end
+
+      if(opponent == "Portland Trail Blazers")
+        return opponent = "POR"
+      end
+
+      if(opponent == "Sacramento Kings")
+        return opponent = "SAC"
+      end
+
+      if(opponent == "San Antonio Spurs")
+        return opponent = "SAS" 
+      end
+      
+      if(opponent == "Toronto Raptors")
+        return opponent = "TOR"
+      end
+
+      if(opponent == "Utah Jazz")
+        return opponent = "UTA"
+      end
+
+      if(opponent == "Washington Wizards")
+        return opponent = "WAS"
+      end
+end

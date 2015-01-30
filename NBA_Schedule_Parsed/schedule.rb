@@ -1,6 +1,6 @@
 class Schedule
 
-	def initialize(year, month, day, hour, minutes, time_zone, opponent, gamenumber, home_away) #Default constructor
+	def initialize(year, month, day, hour, minutes, time_zone, opponent, gamenumber, home_away, network, televized) #Default constructor
 		@game_number = gamenumber
 		@year = year
 		@month = month
@@ -12,6 +12,8 @@ class Schedule
 		@time_zone = time_zone
 		@opponent = opponent
 		@home_away = home_away
+		@network = network
+		@televized = televized
 	end
 
 	def return_year()
@@ -56,5 +58,13 @@ class Schedule
 
 	def return_timezone()
 		return @time_zone
+	end
+	
+	def return_network()
+		return @network
+	end
+
+	def return_televized()
+		return @televized
 	end
 end
