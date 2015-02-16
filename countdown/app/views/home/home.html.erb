@@ -1,0 +1,105 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ <title>Sports Countdown</title>
+  <script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+
+  <link rel="stylesheet" href="bootstrap.min.css">
+
+  <link rel="stylesheet" href="home.css">
+
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:700' rel='stylesheet' type='text/css'>
+
+  <script src="countdown.js"></script>
+
+  <script type="text/javascript" src="home.js"></script>
+
+  <script type="text/javascript" src="file.js"></script>
+
+  <script type="text/javascript" src="bootstrap.min.js"></script>
+
+  <script type="application/json" src="nba_teams.json"> </script>
+
+  <script type="application/json" src="data.json"> </script>
+
+</head>
+
+<body>
+
+  <div class="menu">
+    <h2>Sports Countdown</h2>
+    <p><strong>Please select your sport and league so we can get started!</strong></p>
+  </div>
+
+  <div class="dropdown">
+
+    <h2>Sport</h2>
+    <h2>League</h2>
+    <select class="form-control" id="sport" value="Sport">
+    <option>--Sport--</option>
+      <option>Basketball</option>
+      <option>Football</option>
+      <option>Soccer</option>
+      <option>Golf</option>
+      <option>Boxing</option>
+      <option>Rugby</option>
+      <option>Tennis</option>
+      <option>Bowling</option>
+      <option>Baseball</option>
+    </select>
+
+    <select class="form-control" id="league" value="League">
+      <option>--League--</option>
+        <option class="sport" id="other_sport" style="display: none"></option>
+
+    </select>
+
+
+
+
+
+
+    <!-- <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true"  >
+      Sport
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1" id="sport">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Basketball</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Football</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Soccer</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Golf</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Boxing</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Rugby</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Tennis</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Bowling</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Baseball</a></li>
+    </ul>
+
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="true"  >
+      League
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1" id="league">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">NBA</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">NFL</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Soccer League</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">PGA</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">WBO</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">NRFL</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">ATP</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">PBA</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">MLB</a></li>
+    </ul>
+  -->
+  <input id="shiny" type="submit" value="Go!" />
+
+</div>
+
+
+<ul class="footer">
+  <li><a href="#">About us</li>
+</ul>
+
+
+</body>
+</html>

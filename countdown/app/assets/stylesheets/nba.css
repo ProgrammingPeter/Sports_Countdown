@@ -1,0 +1,67 @@
+// Place all the styles related to the nba controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.sports li{
+	display: inline;
+	font-size: 125%;
+	word-spacing: 100px;
+}
+
+.sports {
+	word-spacing: 10px;
+}
+
+/*I spent 20 minutes playing around trying to figure out why I couldnt change the color of the text, I kept trying to do it in "li" then I realized there was an "a".... >___>*/
+.sports a{ 
+	color: black;
+}
+
+.nav h2{
+	text-shadow: 5px 5px 5px #FF0000;
+	color: #black;
+}
+
+.nav {
+	background-image:url('http://megahdscreen.com/wp-content/uploads/2014/08/Basketball-Wallpaper-Hd-Free-High-Definition-Wallpaper.jpeg');
+	text-align: center;
+}
+
+.nav .container{
+	font-family: 'PT Sans', sans-serif;
+	bottom: 100px;
+}
+
+.nav p{
+	font-size: 125%;
+	color: #FFFFFF;
+}
+
+#countdown {
+	margin-left: 770px;
+	margin-right: auto;
+	width: 6em;
+}
+
+.countdown2 {
+	display: none;
+}
+
+.row {
+	text-align: center;
+}
+
+body {
+	background-image:url("http://965ksom.com/assets/images/NEWS_PHOTOS/hardwood.jpg");
+	/*linear-gradient(black, grey, black);*/
+}
+
+#TimeTill {
+	text-align: center;
+	font-size: 150%;
+}
+
+.logo {
+	position: absolute;
+    left: 100px;
+}
