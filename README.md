@@ -1,6 +1,9 @@
 Sports_Countdown
 ================
 
+Note - The home page is not connected to other pages. It is serving as a demo, and will be connected in the near future, but for now the
+all the options are available, but only the useable option will be, "Basketball" and "NBA".
+
 A website designed to show you a countdown until the next sporting event for professional teams and athletes.
 
 At first only the NBA section is working and all other links are dead, but they will be coming soon!
