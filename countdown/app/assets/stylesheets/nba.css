@@ -22,10 +22,6 @@
 	color: #black;
 }
 
-.nav {
-	background-image:url('http://megahdscreen.com/wp-content/uploads/2014/08/Basketball-Wallpaper-Hd-Free-High-Definition-Wallpaper.jpeg');
-	text-align: center;
-}
 
 .nav .container{
 	font-family: 'PT Sans', sans-serif;
@@ -51,9 +47,10 @@
 	text-align: center;
 }
 
-body {
-	background-image:url("http://965ksom.com/assets/images/NEWS_PHOTOS/hardwood.jpg");
-	/*linear-gradient(black, grey, black);*/
+.center {
+    width: 50%;
+    margin: 0 auto;
+    background-color: white;
 }
 
 #TimeTill {

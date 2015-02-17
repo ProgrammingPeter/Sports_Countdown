@@ -11,13 +11,12 @@
 <body>
 
   <div class="nav">
-  	<div class="container">
 
   	<%= render(:partial => 'header') %> 
 
     </div>
-  </div>
 
+<div class="center">
   <div class="Atlantic">
     <div class="row">
 
@@ -197,15 +196,15 @@
 
     </div>
   </div>
-
+</div>
   <br>
 
 
-  <div id="countdown">
+  <div id="countdown"> </div>
 
- </div>
+ <p id="TimeTill"><strong><font color="white">Click on a team to see how long until their first game of the regular season!</font></strong><p>
 
- <p id="TimeTill"><strong>Click on a team to see how long until their first game of the regular season!</strong><p>
+<%= render(:partial => 'footer') %>
 
-</body>
+	</body>
 </html>
