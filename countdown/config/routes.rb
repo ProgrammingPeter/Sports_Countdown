@@ -1,5 +1,15 @@
 Rails.application.routes.draw do
   
+  get 'post/index'
+
+  get 'post/show'
+
+  get 'post/edit'
+
+  get 'post/delete'
+
+  get 'post/new'
+
   get 'nba/index'
 
   # The priority is based upon order of creation: first created -> highest priority.

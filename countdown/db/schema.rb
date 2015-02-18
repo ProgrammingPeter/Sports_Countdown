@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150214210218) do
+ActiveRecord::Schema.define(version: 20150218042021) do
 
   create_table "conferences", force: :cascade do |t|
     t.string   "name",       limit: 255
@@ -24,6 +24,13 @@ ActiveRecord::Schema.define(version: 20150214210218) do
     t.string   "divisionID", limit: 255
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
+  end
+
+  create_table "posts", force: :cascade do |t|
+    t.string   "title",      limit: 255
+    t.text     "text",       limit: 65535
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
   end
 
   create_table "schedules", force: :cascade do |t|
