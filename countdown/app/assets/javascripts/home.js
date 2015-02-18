@@ -16,13 +16,13 @@ var main = function(){
 		else if(el.val() === "Basketball" ) {
 			$('#league').empty();
 			$('#league').show();
+			$("#league").append("<option>NBA</option>");
+			$('#league').append("<option>WNBA</option>");
+			$("#league").append("<option>D-League</option>");
+			$("#league").append("<option>NCAA</option>");
 			$("#league").append("<option>Europe</option>");
 			$("#league").append("<option>Spain</option>");
 			$("#league").append("<option>China</option>");
-			$("#league").append("<option>NCAA</option>");
-			$("#league").append("<option>D-League</option>");
-			$('#league').append("<option>WNBA</option>");
-			$("#league").append("<option>NBA</option>");
 
 		}
 		else if(el.val() === "Baseball"){
@@ -93,6 +93,14 @@ var main = function(){
 				//$("#league option:last-child").remove() ;
 			}
 		});
+
+	$('#shiny').click(function() {
+
+		if($('#sport').val() === "Basketball" && $('#league').val() === "NBA"){
+
+		window.location.href = "nba/index";
+	}	
+	});
 
 };
 
