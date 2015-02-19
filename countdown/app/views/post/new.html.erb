@@ -1,2 +1,36 @@
-<h1>Post#new</h1>
-<p>Find me in app/views/post/new.html.erb</p>
+ <!DOCTYPE html>
+ <html>
+ <head>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="post.css"> 
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+  <!-- renders header for blog section of website -->
+  <div class="nav">
+  	<%= render(:partial => 'header') %> 
+  </div>
+<div class="test">
+<%= form_for(:post, :url => {:action => 'create'}) do |f| %>
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </p>
+ 
+  <p>
+    <%= f.label :text %><br>
+    <%= f.text_area :text %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+</div>
+
+	<!-- renders footer for blog section of website -->  
+  	<%= render(:partial => 'footer') %>
+
+  </body>

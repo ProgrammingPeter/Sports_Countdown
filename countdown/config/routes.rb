@@ -10,6 +10,8 @@ Rails.application.routes.draw do
 
   get 'post/new'
 
+  resources :post
+
   get 'nba/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
