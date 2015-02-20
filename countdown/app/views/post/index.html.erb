@@ -34,6 +34,11 @@
       <th>Updated</th>
       <td><%= post.updated_at %></td>
     </tr>
+    <td class="actions">
+    <%= link_to("Show", {:action => 'show', :id => post.id}, :class => 'action show') %>
+    <%= link_to("Edit", {:action => 'edit', :id => post.id}, :class => 'action edit') %>
+    <%= link_to("Delete", {:action => 'delete', :id => post.id}, :class => 'action delete') %>
+  </td>
     <% end %>
   </table>
 

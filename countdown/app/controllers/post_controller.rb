@@ -45,6 +45,7 @@ class PostController < ApplicationController
 
   def destroy 
     post = Post.find(params[:id]).destroy
+    redirect_to(:action => 'index')
   end
 
 
