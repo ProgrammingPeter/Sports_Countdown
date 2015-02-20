@@ -13,6 +13,31 @@
   	<%= render(:partial => 'header') %> 
   </div>
 
+<div class="posts show">
+  <h2>Show Posts</h2>
+
+  <table summary="Posts detail view">
+  <% @post.each do |post| %>
+    <tr>
+      <th>Title</th>
+      <td><%= post.title %></td>
+    </tr>
+    <tr>
+      <th>Text</th>
+      <td><%= post.text %></td>
+    </tr>
+    <tr>
+      <th>Created</th>
+      <td><%= post.created_at %></td>
+    </tr>
+    <tr>
+      <th>Updated</th>
+      <td><%= post.updated_at %></td>
+    </tr>
+    <% end %>
+  </table>
+
+</div>
 
 	<!-- renders footer for blog section of website -->  
   	<%= render(:partial => 'footer') %>

@@ -12,7 +12,15 @@ class PostController < ApplicationController
   end
 
   def create
-    @post = Post.new
+    @post = Post.new(post_params)
+
+    if @post.save
+      # If save succeeds, redirect to the index action
+      redirect_to(:action => 'index')
+    else
+      # If save fails, redisplay the form so user can fix problems
+      render('new')
+    end
   end
 
   def edit
@@ -21,6 +29,14 @@ class PostController < ApplicationController
 
   def update
     @post = Post.find(params[:id])
+
+    if @post.update_attributes(post_params)
+      # If update succeeds, redirect to the index action
+      redirect_to(:action => 'show', :id => @post.id)
+    else
+      # If update fails, redisplay the form so user can fix problems
+      render('edit')
+    end
   end
 
   def delete
@@ -35,8 +51,8 @@ class PostController < ApplicationController
   private
 
     def post_params
-      # same as using "params[:subject]", except that it:
-      # - raises an error if :subject is not present
+      # same as using "params[:post]", except that it:
+      # - raises an error if :post is not present
       # - allows listed attributes to be mass-assigned
       params.require(:post).permit(:title, :text)
     end

@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get 'post/new'
 
   resources :post
+  resources :nba
 
   get 'nba/index'
 
