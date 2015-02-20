@@ -98,7 +98,7 @@ var main = function(){
 
 		if($('#sport').val() === "Basketball" && $('#league').val() === "NBA"){
 
-		window.location.href = "nba/index";
+		window.location.href = "nba";
 	}	
 	});
 
